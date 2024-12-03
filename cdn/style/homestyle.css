@@ -1,0 +1,581 @@
+
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_n4.161334af349df25a2cfd2ef229e3fe638b6471c6a0b1.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=e4c9ec319e463b640a2f08cdb0a15d624bef94e9104f4685956951138b328f18")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_n4.db1c9e0093cb75b784ac848dd289a1fa6d164d13f4bb.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=f1dd98f9ae8b98b4c9e61bec00ddab54cce25819881f5c2063703903fd87a0e0")
+            format("woff");
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_n7.58fc15bd5b52101eea961dd8bc6882e199098b2dee65.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=bdc6611fafc228e55883104b37c00d0d36f05f64982dffae63fe137f33804b25")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_n7.4e66c0895d465cee42ac67c5439d380b23021fbdb044.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=34c15e45dd8a3c45b2e65de4a4f92aff307b5a0c0c9dfe0a8ef0f34f113a4476")
+            format("woff");
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_n3.3f3359ec9bd8c8c45a6a0edf537a3d92946b93a66aa1.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=bc4b440ed393f7e433b743b2a18df3d48d0cadca3814b8bb78bcb4b02877a1bd")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_n3.601c893d2e6cb671c99ce4ab1acb0d31d16f9a65a44c.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=e7baeaf6dd7a51ba92d127002c153c602963f84dd287de5dedb76d960f3a6a54")
+            format("woff");
+      }
+      :root {
+        --font-stack-header: "Basic Commercial", sans-serif;
+        --font-style-header: normal;
+        --font-weight-header: 400;
+        --font-weight-header--bolder: 700;
+        --font-weight-header--lighter: 300;
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_n4.161334af349df25a2cfd2ef229e3fe638b6471c6a0b1.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=e4c9ec319e463b640a2f08cdb0a15d624bef94e9104f4685956951138b328f18")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_n4.db1c9e0093cb75b784ac848dd289a1fa6d164d13f4bb.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=f1dd98f9ae8b98b4c9e61bec00ddab54cce25819881f5c2063703903fd87a0e0")
+            format("woff");
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_n7.58fc15bd5b52101eea961dd8bc6882e199098b2dee65.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=bdc6611fafc228e55883104b37c00d0d36f05f64982dffae63fe137f33804b25")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_n7.4e66c0895d465cee42ac67c5439d380b23021fbdb044.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=34c15e45dd8a3c45b2e65de4a4f92aff307b5a0c0c9dfe0a8ef0f34f113a4476")
+            format("woff");
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_n7.58fc15bd5b52101eea961dd8bc6882e199098b2dee65.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=bdc6611fafc228e55883104b37c00d0d36f05f64982dffae63fe137f33804b25")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_n7.4e66c0895d465cee42ac67c5439d380b23021fbdb044.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=34c15e45dd8a3c45b2e65de4a4f92aff307b5a0c0c9dfe0a8ef0f34f113a4476")
+            format("woff");
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_i4.1e3523a998a80ff2e6546b2cd001aec8a0856a1db180.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=47d6fa261424cfaa4c833f8b1b3772d76e568b4a076863ebc28c9bd7b44bc323")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_i4.5a452364d8cbfe7624dcedc42ba47965004077e0fe76.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=528cca010da01cab35f83625f5f5dea687dfd3e41e262010bc9cc5c172c41c7d")
+            format("woff");
+      }
+      @font-face {
+        font-family: "Basic Commercial";
+        font-weight: 700;
+        font-style: italic;
+        font-display: swap;
+        src: url("cdn/fonts/basic_commercial/basiccommercial_i7.b744893e4d48b381d6dd2df580fe48cd51235018dae0.woff2?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=ac0f39092712b93fec094992d4a29832f2ab108f43dd3c0f5324dd926ea954b2")
+            format("woff2"),
+          url("cdn/fonts/basic_commercial/basiccommercial_i7.e673ec03e93a1eb984e4975a041a3cf21f5e558263f8.woff?h1=M2FmZTk0LTIuYWNjb3VudC5teXNob3BpZnkuY29t&amp;h2=Z29yZXJiYXphcjI0Lm15c2hvcGlmeS5jb20&amp;h3=Z2hvcmVyYmF6YXIuY28&amp;h4=Z2hvcmVyYmF6YXIuY29t&amp;hmac=fc61b3611e695ea6f1a07d9ede8cc9f71eeb8b3eaed6039b97cf85abff337afd")
+            format("woff");
+      }
+      :root {
+        --font-weight-body--bold: 700;
+        --font-weight-body--bolder: 700;
+        --font-stack-body: "Basic Commercial", sans-serif;
+        --font-style-body: normal;
+        --font-weight-body: 400;
+      }
+      
+      html {
+        font-size: calc(var(--font-base-size, 16) * 1px);
+      }
+      body {
+        font-family: var(--font-stack-body) !important;
+        font-weight: var(--font-weight-body);
+        font-style: var(--font-style-body);
+        color: var(--color-body-text);
+        font-size: calc(var(--font-base-size, 16) * 1px);
+        line-height: calc(var(--base-line-height) * 1px);
+        scroll-behavior: smooth;
+      }
+      body .h1,
+      body .h2,
+      body .h3,
+      body .h4,
+      body .h5,
+      body .h6,
+      body h1,
+      body h2,
+      body h3,
+      body h4,
+      body h5,
+      body h6 {
+        font-family: var(--font-stack-header);
+        font-weight: var(--font-weight-header);
+        font-style: var(--font-style-header);
+        color: var(--color-heading-text);
+        line-height: normal;
+      }
+      body .h1,
+      body h1 {
+        font-size: calc(
+          ((var(--font-h1-mobile)) / (var(--font-base-size))) * 1rem
+        );
+      }
+      body .h2,
+      body h2 {
+        font-size: calc(
+          ((var(--font-h2-mobile)) / (var(--font-base-size))) * 1rem
+        );
+      }
+      body .h3,
+      body h3 {
+        font-size: calc(
+          ((var(--font-h3-mobile)) / (var(--font-base-size))) * 1rem
+        );
+      }
+      body .h4,
+      body h4 {
+        font-size: calc(
+          ((var(--font-h4-mobile)) / (var(--font-base-size))) * 1rem
+        );
+      }
+      body .h5,
+      body h5 {
+        font-size: calc(
+          ((var(--font-h5-mobile)) / (var(--font-base-size))) * 1rem
+        );
+      }
+      body .h6,
+      body h6 {
+        font-size: calc(
+          ((var(--font-h6-mobile)) / (var(--font-base-size))) * 1rem
+        );
+        line-height: 1.4;
+      }
+      @media only screen and (min-width: 768px) {
+        body .h1,
+        body h1 {
+          font-size: calc(
+            ((var(--font-h1-desktop)) / (var(--font-base-size))) * 1rem
+          );
+        }
+        body .h2,
+        body h2 {
+          font-size: calc(
+            ((var(--font-h2-desktop)) / (var(--font-base-size))) * 1rem
+          );
+        }
+        body .h3,
+        body h3 {
+          font-size: calc(
+            ((var(--font-h3-desktop)) / (var(--font-base-size))) * 1rem
+          );
+        }
+        body .h4,
+        body h4 {
+          font-size: calc(
+            ((var(--font-h4-desktop)) / (var(--font-base-size))) * 1rem
+          );
+        }
+        body .h5,
+        body h5 {
+          font-size: calc(
+            ((var(--font-h5-desktop)) / (var(--font-base-size))) * 1rem
+          );
+        }
+        body .h6,
+        body h6 {
+          font-size: calc(
+            ((var(--font-h6-desktop)) / (var(--font-base-size))) * 1rem
+          );
+        }
+      }
+      .swiper-wrapper {
+        display: flex;
+      }
+      .swiper-container:not(.swiper-container-initialized) .swiper-slide {
+        width: calc(100% / var(--items, 1));
+        flex: 0 0 auto;
+      }
+      @media (max-width: 1023px) {
+        .swiper-container:not(.swiper-container-initialized) .swiper-slide {
+          min-width: 40vw;
+          flex: 0 0 auto;
+        }
+      }
+      @media (max-width: 767px) {
+        .swiper-container:not(.swiper-container-initialized) .swiper-slide {
+          min-width: 66vw;
+          flex: 0 0 auto;
+        }
+      }
+      .opacity-0 {
+        opacity: 0;
+      }
+      .opacity-100 {
+        opacity: 1 !important;
+      }
+      .placeholder-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      .placeholder-background--animation {
+        background-color: #000;
+        animation: placeholder-background-loading 1.5s infinite linear;
+      }
+      [data-image-loading] {
+        position: relative;
+      }
+      [data-image-loading]:after {
+        content: "";
+        background-color: #000;
+        animation: placeholder-background-loading 1.5s infinite linear;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      [data-image-loading] img.lazyload {
+        opacity: 0;
+      }
+      [data-image-loading] img.lazyloaded {
+        opacity: 1;
+      }
+      .no-js [data-image-loading] {
+        animation-name: none;
+      }
+      .lazyload--fade-in {
+        opacity: 0;
+        transition: 0.25s all;
+      }
+      .lazyload--fade-in.lazyloaded {
+        opacity: 1;
+      }
+      @media (min-width: 768px) {
+        .hidden.md\:block {
+          display: block !important;
+        }
+        .hidden.md\:flex {
+          display: flex !important;
+        }
+        .hidden.md\:grid {
+          display: grid !important;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hidden.lg\:block {
+          display: block !important;
+        }
+        .hidden.lg\:flex {
+          display: flex !important;
+        }
+        .hidden.lg\:grid {
+          display: grid !important;
+        }
+      }
+      @media (min-width: 1280px) {
+        .hidden.xl\:block {
+          display: block !important;
+        }
+        .hidden.xl\:flex {
+          display: flex !important;
+        }
+        .hidden.xl\:grid {
+          display: grid !important;
+        }
+      }
+
+      h1,
+      .h1,
+      h2,
+      .h2,
+      h3,
+      .h3,
+      h4,
+      .h4,
+      h5,
+      .h5,
+      h6,
+      .h6 {
+        letter-spacing: 0px;
+      }
+      
+    :root {
+      /* ANIMATIONS */
+      --m-animation-duration: 600ms;
+      --m-animation-fade-in-up: m-fade-in-up var(--m-animation-duration)
+        cubic-bezier(0, 0, 0.3, 1) forwards;
+      --m-animation-fade-in-left: m-fade-in-left var(--m-animation-duration)
+        cubic-bezier(0, 0, 0.3, 1) forwards;
+      --m-animation-fade-in-right: m-fade-in-right var(--m-animation-duration)
+        cubic-bezier(0, 0, 0.3, 1) forwards;
+      --m-animation-fade-in-left-rtl: m-fade-in-left-rtl
+        var(--m-animation-duration) cubic-bezier(0, 0, 0.3, 1) forwards;
+      --m-animation-fade-in-right-rtl: m-fade-in-right-rtl
+        var(--m-animation-duration) cubic-bezier(0, 0, 0.3, 1) forwards;
+      --m-animation-fade-in: m-fade-in calc(var(--m-animation-duration) * 2)
+        cubic-bezier(0, 0, 0.3, 1);
+      --m-animation-zoom-fade: m-zoom-fade var(--m-animation-duration) ease
+        forwards; /* BODY */
+      --base-line-height: 28; /* PRIMARY COLORS */
+      --color-primary: #fc8934;
+      --plyr-color-main: #fc8934;
+      --color-primary-darker: #ef6804; /* TEXT COLORS */
+      --color-body-text: #000000;
+      --color-heading-text: #000000;
+      --color-sub-text: #666666;
+      --color-text-link: #000000;
+      --color-text-link-hover: #999999; /* BUTTON COLORS */
+      --color-btn-bg: #fc8934;
+      --color-btn-bg-hover: #fc8934;
+      --color-btn-text: #ffffff;
+      --color-btn-text-hover: #ffffff;
+      --color-btn-secondary-border: #fc8934;
+      --color-btn-secondary-text: #fc8934;
+      --btn-letter-spacing: 0px;
+      --btn-border-radius: 5px;
+      --btn-border-width: 1px;
+      --btn-line-height: 23px; /* PRODUCT COLORS */
+      --product-title-color: #000000;
+      --product-sale-price-color: #666666;
+      --product-regular-price-color: #000000;
+      --product-type-color: #666666;
+      --product-desc-color: #666666; /* TOPBAR COLORS */
+      --color-topbar-background: #ffffff;
+      --color-topbar-text: #000000; /* MENU BAR COLORS */
+      --color-menu-background: #f3f3f3;
+      --color-menu-text: #0a0303; /* BORDER COLORS */
+      --color-border: #dedede; /* FOOTER COLORS */
+      --color-footer-text: #fc8934;
+      --color-footer-subtext: #000000;
+      --color-footer-background: #ffffff;
+      --color-footer-link: #0a0303;
+      --color-footer-link-hover: #fc8934;
+      --color-footer-background-mobile: #ffffff; /* FOOTER BOTTOM COLORS */
+      --color-footer-bottom-text: #fff;
+      --color-footer-bottom-background: #fc8934;
+      --color-footer-bottom-background-mobile: #fc8934; /* HEADER */
+      --color-header-text: #fc8934;
+      --color-header-transparent-text: #000000;
+      --color-main-background: #fff;
+      --color-field-background: #fc8934;
+      --color-header-background: #fff;
+      --color-cart-wishlist-count: #ffffff;
+      --bg-cart-wishlist-count: #fc8934;
+      --swatch-item-background-default: #f7f8fa;
+      --text-gray-400: #777777;
+      --text-gray-9b: #9b9b9b;
+      --text-black: #000000;
+      --text-white: #ffffff;
+      --bg-gray-400: #f7f8fa;
+      --bg-black: #000000;
+      --rounded-full: 9999px;
+      --border-color-1: #eeeeee;
+      --border-color-2: #b2b2b2;
+      --border-color-3: #d2d2d2;
+      --border-color-4: #737373;
+      --color-secondary: #666666;
+      --color-success: #3a8735;
+      --color-warning: #ff706b;
+      --color-info: #959595;
+      --color-disabled: #cecece;
+      --bg-disabled: #f7f7f7;
+      --bg-hover: #737373;
+      --bg-color-tooltip: #fc8934;
+      --text-color-tooltip: #ffffff;
+      --color-image-overlay: #000000;
+      --opacity-image-overlay: 0.2;
+      --theme-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.07);
+      --arrow-select-box: url(cdn/shop/t/2/assets/ar-down9124.svg?v=92728264558441377851707765653); /* FONT SIZES */
+      --font-base-size: 16;
+      --font-btn-size: 16px;
+      --font-btn-weight: 500;
+      --font-h1-desktop: 54;
+      --font-h1-mobile: 50;
+      --font-h2-desktop: 42;
+      --font-h2-mobile: 37;
+      --font-h3-desktop: 31;
+      --font-h3-mobile: 28;
+      --font-h4-desktop: 27;
+      --font-h4-mobile: 24;
+      --font-h5-desktop: 23;
+      --font-h5-mobile: 20;
+      --font-h6-desktop: 21;
+      --font-h6-mobile: 19;
+      --arrow-down-url: url(//ghorerbazar.com/cdn/shop/t/2/assets/arrow-down.svg?v=157552497485556416461707765653);
+      --arrow-down-white-url: url(//ghorerbazar.com/cdn/shop/t/2/assets/arrow-down-white.svg?v=70535736727834135531707765653);
+      --product-title-line-clamp: 1;
+      --spacing-sections-desktop: 100px;
+      --spacing-sections-tablet: 75px;
+      --spacing-sections-mobile: 50px;
+    }
+  
+
+  
+    body {
+      --container-width: 1200;
+      --fluid-container-width: 1620px;
+      --fluid-container-offset: 65px;
+      background-color: #fff;
+    }
+    [style*="--aspect-ratio"]:before {
+      padding-top: calc(100% / (0.0001 + var(--aspect-ratio, 16/9)));
+    }
+    @media (max-width: 767px) {
+      [style*="--aspect-ratio"]:before {
+        padding-top: calc(
+          100% /
+            (0.0001 + var(--aspect-ratio-mobile, var(--aspect-ratio, 16/9)))
+        );
+      }
+    }
+    .sf-topbar {
+      border-color: #eee;
+    }
+    .sf__font-normal {
+      font-weight: 400;
+    }
+    body .sf-footer__block .social-media-links {
+      gap: 12px;
+      margin: 0;
+      padding: 5px;
+      flex-wrap: wrap;
+    }
+    body .sf-footer__block .social-media-links a {
+      color: #222;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #e9e9e9;
+      transition: all 0.3s;
+    }
+    body .sf-footer__block .social-media-links a:hover {
+      background-color: #222;
+      color: #fff;
+      box-shadow: 0 0 0 0.2rem #222;
+    }
+    @media (min-width: 1536px) {
+      body .sf__footer-block-newsletter .sf__footer-block-title {
+        font-size: 42px;
+      }
+    }
+    .sf-tab-header {
+      padding: 8px 13px;
+      border-radius: 5px;
+      text-align: center;
+      color: #000;
+      width: 180px;
+      opacity: 1 !important;
+      margin: 2px;
+      background: #f6b0cf;
+    }
+    @media screen and (max-width: 767px) {
+      .sf-prod__info-wrapper {
+        margin-top: -10px;
+      }
+      #ghorerbazar_s {
+        text-align: center;
+        width: 110px !important;
+        display: block;
+        background: #ff8a41;
+        padding: 12px;
+        color: white;
+        border-radius: 5px;
+        margin-left: 5px;
+      }
+      .product-tabs__header a.hidden {
+        display: block !important;
+        font-size: 15px;
+        width: 145px;
+      }
+      .sf-select-custom {
+        display: none;
+      }
+    }
+    .sf-tab-header:after {
+      height: 0px;
+    }
+    .sf__pcard-style-2 .sf__pcard-action .sf__btn-icon {
+      background: #f69aae;
+    } /* custom css */
+    .sf__pcard-content .max-w-full {
+      max-width: 100%;
+      height: 50px;
+    }
+    .sf-mixed-layout .sf-prod__block,
+    .swiper-wrapper .sf-prod__block,
+    .sf__product-listing .sf-prod__block {
+      border: 1px solid #dde0e5;
+      padding: 12px;
+    }
+    .sf-prod__info .quantity-input,
+    .sf-prod__info .quantity-input input {
+      color: #ff8b4b;
+    }
+    .sf-prod__info .quantity-input,
+    .sf-prod__info .quantity-input input {
+      background-color: #ffffff;
+    }
+    .border-color-border {
+      border-color: #ff8b4b;
+    }
+    .product-form__actions .add-to-cart {
+      position: relative;
+    }
+    .product-form__actions .add-to-cart {
+      position: relative;
+      background-color: white !important;
+      color: #ff8b4b !important;
+    }
+    .sf-home__iconbox .items-start,
+    .sf-home__iconbox .sm\:items-start {
+      align-items: center;
+    }
+    .sf-home__iconbox h3 {
+      color: #fc8934;
+    }
+    .sf-home__iconbox .section-py {
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+    .product-tags a {
+      background: #ff8a41;
+      border-radius: 15px;
+      padding: 3px 8px;
+      color: white;
+      margin-left: 7px;
+      font-size: 14px;
+      position: relative;
+      top: 4px;
+    }
+    .product-tags-in-grid a {
+      background: #ff8a41;
+      border-radius: 15px;
+      padding: 3px 8px;
+      color: white;
+      margin-left: 7px;
+      font-size: 14px;
+    }
+
+    #shopify-section-template--17326543175902__649443dd-f906-4176-9bff-9f1ea24f6a20 .site_bannar .sf-custom__block:first-child {
+      padding: 0px !important; 
+    }

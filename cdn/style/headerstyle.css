@@ -1,0 +1,113 @@
+
+
+
+        .announcement-bar {
+          background-color: #fc8934;
+          position: relative;
+          z-index: 60;
+        }
+        .announcement-bar__content,
+        .sf-topbar__close {
+          color: #fff;
+        }
+        .announcement-bar a:hover {
+          opacity: 0.6;
+        }
+        .page-header {
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+            background: #fe8838;
+            color: white;
+          }
+          .page-header__title {
+            color: white;
+          }
+
+          .cartbody{
+            height: 93vh!important;
+          }
+    
+
+
+.res{
+  background-color: #cccccc !important;
+}
+
+          .product-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+            padding: 15px;
+          
+            border-radius: 8px;
+           
+            margin-bottom: 15px;
+          }
+      
+          .product-image {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+          }
+      
+          .product-details {
+            flex: 1;
+            margin-left: 15px;
+          }
+      
+          .product-details h4 {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
+      
+          .product-details p {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 5px;
+          }
+      
+          .product-price {
+            font-weight: bold;
+            margin-top: 5px;
+          }
+      
+          .quantity-control {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+          }
+      
+          .quantity-control button {
+            background: #ddd;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+      
+          .quantity-control button:hover {
+            background: #ccc;
+          }
+      
+          .quantity-control input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+          }
+      
+          .remove-btn {
+            background: transparent;
+            border: none;
+            color: #f00;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 15px;
+          }
+      
+          .remove-btn:hover {
+            text-decoration: underline;
+          }
