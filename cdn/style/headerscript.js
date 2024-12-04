@@ -68,6 +68,45 @@ function _smcp() {
     );
   }
 }
+
+      
+window.MinimogTheme = {};
+window.MinimogTheme.version = "3.3.0";
+window.MinimogLibs = {};
+
+ 
+
+window.MinimogSettings = {
+  
+  
+  
+  
+
+
+ 
+  routes: {
+    root: "\/",
+    cart: "\/cart",
+   
+  },
+  
+  
+  enable_cart_drawer: true,
+ 
+};
+
+window.themeScriptURLs = {
+
+  collection: {
+    url: "//ghorerbazar.com/cdn/shop/t/2/assets/collection.min.js?v=30728561818773925521707765654",
+    required: false,
+  },
+  
+ 
+  
+ 
+};
+
 // setTopbarHeight
 function _stbh() {
   // Topbar
